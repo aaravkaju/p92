@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-Player Math Quiz</title>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <center>
+            <h1>Math Quiz Game</h1>
+            
+            <h3 id="player1NameDisplay"></h3>
+            <h3 id="player2NameDisplay"></h3>
+            <h4 id="player1Score">Score: 0</h4>
+            <h4 id="player2Score">Score: 0</h4>
+           
+            <h4 id="questionTurn"></h4>
+            <h4 id="answerTurn"></h4>
+            
+            <div id="output" class="mb-3"></div>
+           
+            <div class="form-group">
+                <label for="number1">Number 1:</label>
+                <input type="number" class="form-control" id="number1" placeholder="Enter first number">
+            </div>
+            <div class="form-group">
+                <label for="number2">Number 2:</label>
+                <input type="number" class="form-control" id="number2" placeholder="Enter second number">
+            </div>
+           
+            <button class="btn btn-primary" onclick="send()">Send</button>
+        </center>
+    </div>
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+    <script src="quiz_game_page.js"></script>
+</body>
+</html>
